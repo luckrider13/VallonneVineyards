@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="com.example.android.vallonnevineyards.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Sula Vineyards!"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/welcome"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="98dp"
+        android:text="our products"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/welcome"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:id="@+id/textView" />
+    <ImageView
+        android:layout_width="112dp"
+        android:layout_height="70dp"
+        android:src="@drawable/android_rasa_shiraz_icon"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/rasa_shiraz"/>
+    <ImageView
+        android:layout_width="112dp"
+        android:layout_height="70dp"
+        android:src="@drawable/android_chenin_blanc_icon"
+        android:layout_alignTop="@+id/rasa_shiraz"
+        android:layout_toRightOf="@+id/rasa_shiraz"
+        android:layout_toEndOf="@+id/rasa_shiraz"
+        android:id="@+id/chenin_blanc"/>
+    <ImageView
+        android:layout_width="112dp"
+        android:layout_height="70dp"
+        android:src="@drawable/android_dia_red_icon"
+        android:layout_toRightOf="@id/chenin_blanc"
+        android:layout_toEndOf="@id/chenin_blanc"
+        android:layout_alignTop="@id/chenin_blanc"
+        android:layout_marginRight="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android_layout_alignParentTop="true"
+        android:layout_below="@id/rasa_shiraz"
+        android:layout_marginTop="70dp"
+        android:text="Address:Gat 36/2, Govardhan Village, Off Gangapur-Savargaon Road, Nashik, Maharashtra 422222"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:id="@+id/address"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/address"
+        android:layout_marginTop="10dp"
+        android:text="Phone: 0253 302 7777"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:id="@+id/phone"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/phone"
+        android:text="Hours open 11:30AM–10:30PM"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>
